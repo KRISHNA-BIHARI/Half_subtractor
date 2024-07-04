@@ -28,7 +28,7 @@ module Half_sub(
 );
 wire w1;
   // Combinational logic equations for difference and  borrow
- assign    s = a ^ b; // XOR operation for sum
+ assign    s = a ^ b; // XOR operation for difference
  assign w1 = ~a; // taking not of A
- assign   c = w1 & b;  // AND operation for carry
+ assign   c = w1 & b;  // AND operation for borrow
 endmodule
